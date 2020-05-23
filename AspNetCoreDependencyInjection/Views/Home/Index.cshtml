@@ -1,0 +1,17 @@
+﻿@model AspNetCoreDependencyInjection.Models.HomeViewModel
+@{
+	ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+	<div class="row">
+		<div class="col-12">
+			<p class="alert alert-info text-left">
+				<b>Id : </b><span>@Model.Id</span> <br />
+				<b>Date And Time : </b><span> @Model.DateTime </span> <br/>
+				<b>Message : </b><span>@Model.Message</span>
+				
+			</p>
+		</div>
+	</div>
+</div>

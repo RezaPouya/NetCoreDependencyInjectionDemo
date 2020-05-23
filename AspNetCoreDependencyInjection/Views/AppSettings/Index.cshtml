@@ -1,0 +1,74 @@
+﻿@model AspNetCoreDependencyInjection.Models.AppSettingViewModel
+@{
+	ViewData["Title"] = "App Settings";
+}
+
+	<div class="text-left">
+		<div class="row " >
+			<div class="col-12">
+				<div class="alert alert-info">
+					<h4 class="h4">AppSettings</h4>
+					<hr class="border-dark" />
+
+					<table class="table table-bordered table-dark">
+						<tr>
+							<th>Application Name</th>
+							<td>@Model.ApplicationName</td>
+						</tr>
+						<tr>
+							<th>Greeting Message</th>
+							<td>@Model.GreetingMessage</td>
+						</tr>
+						<tr>
+							<th>Allowed Hosts</th>
+							<td>@Model.AllowedHosts</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-12">
+				<div class="alert alert-info">
+					<h4 class="h4">User Options </h4>
+					<hr class="border-dark" />
+					<table class="table table-bordered table-dark">
+						<tr>
+							<th>Users Avatars Folder </th>
+							<td>@Model.UserOptions.UsersAvatarsFolder</td>
+						</tr>
+						<tr>
+							<th>User Default Photo Name</th>
+							<td>@Model.UserOptions.UserDefaultPhoto</td>
+						</tr>
+						<tr>
+							<th>Max Height </th>
+							<td>@Model.UserOptions.UserAvatarImageOptions.MaxHeight px</td>
+						</tr>
+						<tr>
+							<th>Max Width </th>
+							<td>@Model.UserOptions.UserAvatarImageOptions.MaxWidth px</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<br/>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="alert alert-info">
+					<h4 class="h4">Lite DbConfig </h4>
+					<hr class="border-dark" />
+					<table class="table table-bordered table-dark">
+						<tr>
+							<th>Connection Strings </th>
+							<td>@Model.LiteDb.ConnectionString</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</div>
